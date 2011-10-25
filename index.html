@@ -57,6 +57,20 @@
 <pre>$ npm install -g rorrim</pre>
 <h2>Usage</h2>
 <p>Here's how to use the tool</p>
+<p>Currently there are two ways to add files to rorrim's cache:
+	<ul>
+		<li>the (potentially buggy) command line flag
+			<pre>$ rorrim -i "http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"</pre>
+		</li>
+		<li>
+			and by manually copying files into a directory under
+			<pre>~/.rorrim/hosts</pre> named the same as the hostname for example
+			<pre>~/.rorrim/hosts/cdnjs.cloudflare.com</pre> Then just run `rorrim` to
+			start the server.
+		</li>
+	</ul>
+<p>Eventually it will be easier to interact with rorrim, but this is just an
+"MVP". Running <pre>rorrim --help</pre> will show you some basic usage</p>
 <h2>Authors</h2>
 <p>Sidney San Martín (s@sidneysm.com)<br/>Sam Epstein (s@samepstein.com)</p>
 <h2>Contact</h2>
